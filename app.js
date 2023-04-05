@@ -12,6 +12,7 @@ let beingDragged
 
 function dragStart(e) {
     beingDragged = e.target
+    console.log(beingDragged)
 }
 
 function dragOver(e) {
@@ -19,6 +20,7 @@ function dragOver(e) {
 }
 
 function dragDrop(e) {
+     e.target.append(beingDragged)
      console.log(e.target)
 }
 
